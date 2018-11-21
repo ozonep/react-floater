@@ -1,11 +1,11 @@
 {
-  "name": "react-floater",
-  "version": "0.6.0",
+  "name": "react-floater-fork",
+  "version": "0.6.1",
   "description": "Floaters everywhere!",
   "author": "Gil Barbara <gilbarbara@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gilbarbara/react-floater.git"
+    "url": "git+https://github.com/ozonep/react-floater.git"
   },
   "bugs": {
     "url": "https://github.com/gilbarbara/react-floater/issues"
@@ -32,8 +32,8 @@
   ],
   "license": "MIT",
   "peerDependencies": {
-    "react": "^15.0.0 || ^16.0.0",
-    "react-dom": "^15.0.0 || ^16.0.0",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
     "prop-types": "^15.0.0"
   },
   "dependencies": {

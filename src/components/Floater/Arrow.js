@@ -29,13 +29,13 @@ export default class FloaterArrow extends React.Component {
       arrow.height = length;
     }
     else if (placement.startsWith('left')) {
+      arrow.left = 0;
+      arrow.top = 0;
+    }
+    else if (placement.startsWith('right')) {
       arrow.right = 0;
       arrow.top = 0;
       arrow.bottom = 0;
-    }
-    else if (placement.startsWith('right')) {
-      arrow.left = 0;
-      arrow.top = 0;
     }
 
     return arrow;
@@ -62,14 +62,14 @@ export default class FloaterArrow extends React.Component {
     else if (placement.startsWith('left')) {
       y = spread;
       x = length;
-      points = `0,0 ${x},${y / 2} 0,${y}`;
-      arrowStyles.right = 0;
+      points = `${x},${y} ${x},0 0,${y / 2}`;
+      arrowStyles.left = 0;
     }
     else if (placement.startsWith('right')) {
       y = spread;
       x = length;
-      points = `${x},${y} ${x},0 0,${y / 2}`;
-      arrowStyles.left = 0;
+      points = `0,0 ${x},${y / 2} 0,${y}`;
+      arrowStyles.right = -x;
     }
 
     return (
